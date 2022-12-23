@@ -15,7 +15,10 @@ return new class extends Migration
     {
         Schema::create('config_payment', function (Blueprint $table) {
             $table->id();
+            $table->string('fee');
+            $table->string('vat');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
