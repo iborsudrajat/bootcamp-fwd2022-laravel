@@ -16,25 +16,23 @@ class ConsultationSeeder extends Seeder
      */
     public function run()
     {
-       // created data here
-       $consultation = [
-        [
-            'name' => 'Jantung Sesal',
-            
-        ],
-        [
-            'name' => 'Tekanan Darah Tinggi',
-            
-        ],
-        [
-            'name' => 'Gangguan Irama Jantung',
-            
-        ],
-        
-    ];
+        // create data here
+        $consultation = [
+            [
+                'name' => 'Jantung Sesak',
+                
+            ],
+            [
+                'name' => 'Tekanan Darah Tinggi',
+                
+            ],
+            [
+                'name' => 'Gangguan Irama Jantung',
+                
+            ],
+        ];
 
-    // this array $consultation will be insert to table 'consultation'
-    Consultation::insert($consultation);
+        // this array $consultation will be insert to table 'consultation'
+        Consultation::insert($consultation);
     }
-    
 }
