@@ -3,10 +3,26 @@
 namespace App\Http\Controllers\Frontsite;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+
+//use library here
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\Response;
+
+//use everything here
+//use Gate;
+Use Auth;
+
+// models here
+use App\Models\User;
+use App\Models\Operational\Doctor;
+use App\Models\MasterData\Specialist;
+use App\Http\Controllers\Frontsite\LandingController;
+
+// third party package
 
 class LandingController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +30,7 @@ class LandingController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.frontsite.landing-page.index');
     }
 
     /**
@@ -24,7 +40,7 @@ class LandingController extends Controller
      */
     public function create()
     {
-        //
+        return abort(404);
     }
 
     /**
@@ -35,7 +51,7 @@ class LandingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return abort(404);
     }
 
     /**
@@ -46,7 +62,7 @@ class LandingController extends Controller
      */
     public function show($id)
     {
-        //
+        return abort(404);
     }
 
     /**
@@ -57,7 +73,7 @@ class LandingController extends Controller
      */
     public function edit($id)
     {
-        //
+        return abort(404);
     }
 
     /**
@@ -80,6 +96,6 @@ class LandingController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return abort(404);
     }
 }
