@@ -16,13 +16,22 @@ Use Auth;
 use App\Models\User;
 use App\Models\Operational\Doctor;
 use App\Models\MasterData\Specialist;
-use App\Http\Controllers\Frontsite\LandingController;
+
 
 // third party package
 
 class LandingController extends Controller
 {
-    
+    /** 
+     * Create a new controller instance
+     * 
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
