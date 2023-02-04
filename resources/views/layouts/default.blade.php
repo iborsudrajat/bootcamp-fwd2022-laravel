@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 
-        @include('includes.frontsite.meta')
+       @include('includes.frontsite.meta')
 
         <title>@yield('title') | MeetDoctor</title>
 
