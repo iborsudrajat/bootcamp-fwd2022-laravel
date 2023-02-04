@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Fronsite\LandingController;
-use App\Http\Controllers\Fronsite\AppointmentController;
-use App\Http\Controllers\Fronsite\PaymentController;
+use App\Http\Controllers\Frontsite\LandingController;
+use App\Http\Controllers\Frontsite\AppointmentController;
+use App\Http\Controllers\Frontsite\PaymentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
