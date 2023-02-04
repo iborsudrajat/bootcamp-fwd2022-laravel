@@ -19,8 +19,8 @@ use App\Http\Controllers\Frontsite\PaymentController;
 Route::resource('/',LandingController::class);
 
 
-Route::group([ 'middleware' => ['auth:sanctum',
-'verified']], function(){
+Route::group(['prefix' => 'backsite', 'as' => 'backsite', 'middleware' => ['auth:sanctum',
+'verified']], function (){
     //return view('dashboard');
 
     //appointment page
@@ -33,10 +33,6 @@ Route::group([ 'middleware' => ['auth:sanctum',
  //   return view('welcome');
 //});
 
-Route::group(['prefix' => 'backsite', 'as' => 'backsite', 'middleware' => ['auth:sanctum',
-'verified']], function (){
- 
-        return view('dashboard');
-});  
+  
     //})->name('dashboard');
 //});
