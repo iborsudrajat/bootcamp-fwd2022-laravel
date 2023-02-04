@@ -131,6 +131,6 @@ class AppointmentController extends Controller
         $doctor = Doctor::where('id', $id)->first();
         $consultation = Consultation::orderBy('name', 'asc')->get();
 
-        return view('pages.frontsite.appointment.index', compact('doctor', 'consultation'));
+        return view('pages.frontsite.appointment.index');
     }
 }
