@@ -157,7 +157,7 @@
             class="py-3 border-gray-200"
         >
             <a
-                href="src/pages/sign-in.html"
+                href="{{ route('login') }}"
                 class="flex items-center justify-center text-center mx-4 rounded-full text-[#1E2B4F] text-lg font-medium bg-[#F2F6FE] px-10 py-3"
             >
             Sign In
