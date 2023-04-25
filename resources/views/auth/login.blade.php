@@ -1,10 +1,10 @@
 @extends('layouts.auth')
 
-@section('title', 'login')
+@section('title', 'Login')
 
 @section('content')
 
-<div class="min-h-screen">
+    <div class="min-h-screen">
         <div class="grid lg:grid-cols-2">
             <!-- Form-->
             <div class="px-4 lg:px-[91px] pt-10">
@@ -116,6 +116,5 @@
             <!-- End Qoute -->
         </div>
     </div>
-
 
 @endsection
